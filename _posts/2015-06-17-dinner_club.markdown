@@ -2,28 +2,27 @@
 layout: post
 title: "Dinner Club"
 date: 2015-06-17
-categories: technical code
+categories: technical code ruby
 ---
 
-# Dinner Club Explanation
-
-## Assignment Task
-
+# Assignment Task
 The program was built to keep track of a dinner club's events. Specifically, it stores and displays club history, as well as members and total member costs during the history of the Dinner Club.
 
-## Classes
+# Classes
 Three classes were used to accomplish the Dinner Club assignment: CheckSplitter, ClubEvent, and DinnerClub.
 
-## CheckSplitter Class
+# CheckSplitter Class
 The CheckSplitter class was created to split the costs of a given meal. It requires three parameters to split the costs of the meal:
-- Total cost of the meal as an integer
-- Tip percentage as an integer or float
-- Number of people as an integer
 
-## ClubEvent Class
+- total_cost - Integer for the cost of the meal
+- tip_percentage - Integer or Float for the percentage of tip
+- people - Integer for the number of people attending the dinner
+
+# ClubEvent Class
 The ClubEvent cost was created to gather and store information about a specific event that the Dinner Club holds.
 
-### ClubEvent Instance Variables
+#### ClubEvent Instance Variables
+
 - total_cost - Integer of the cost of the meal given by user
 - tip_percentage - Integer or float given by user
 - people - Array of members who attended the event given by user
@@ -31,14 +30,14 @@ The ClubEvent cost was created to gather and store information about a specific 
 - location - String given by user
 - who_paid - String given by user
 - per_person - Float calculated from a method
-- total_cost_single_pay - Float calculated from a method
+- total\_cost\_single_pay - Float calculated from a method
 - attendees_hash - Hash created from a method. Key is member and value is cost the member paid.
-- event_log - Hash created from a method. Key is date, value is an array. Array contains location at index 0 and the attendees_hash at index 1.
+- event\_log - Hash created from a method. Key is date, value is an Array. Array contains location at index 0 and the attendees_hash at index 1.
 
-### ClubEvent Methods
-The *define_costs_for_event* method creates a new CheckSplitter object and stores the split as the per_person instance variable. It also stores the total_cost_single_pay instance variable as the cost of the meal plus tip, to be used if one person treats the group.
+#### ClubEvent Methods
+The "define\_costs\_for\_event" method creates a new CheckSplitter object and stores the split as the per\_person instance variable. It also stores the total\_cost\_single\_pay instance variable as the cost of the meal plus tip, to be used if one person treats the group.
 
-The *store_attendees_and_costs* method creates and populates the attendees_hash.
+The "store\_attendees\_and\_costs" method creates and populates the attendees\_hash.
 
 ~~~ruby
 def store_attendees_and_costs(who_paid, people, per_person)
@@ -52,9 +51,9 @@ def store_attendees_and_costs(who_paid, people, per_person)
 end
 ~~~
 
-It's uses another utility method, the *populate_attendees_hash*, which iterates over the people array and populates the attendees_hash with members and their costs.  In the *store_attendees_and_costs* method, an if-else statement is added to determine if everyone paid, or a specific person treated the group. If everyone paid, the attendees_hash value is populated with the per_person costs. If one person paid, the attendees_hash is still populated with all attendees, but their value is set to 0. Then the value at the key of who_paid is modified to be the total_cost_single_pay.
+This method uses another utility method, the "populate\_attendees\_hash", which iterates over the people Array and populates the attendees\_hash with members and their costs.  In the "store\_attendees\_and\_costs" method, an if-else statement is added to determine if everyone paid, or a specific person treated the group. If everyone paid, the attendees\_hash value is populated with the per_person costs. If one person paid, the attendees\_hash is still populated with all attendees, but their value is set to 0. Then the value at the key of who\_paid is modified to be the total\_cost\_single\_pay.
 
-Finally, ClubEvent has the *event_history_update* method, which is used to create the event_log hash.
+Finally, ClubEvent has the "event\_history\_update" method, which is used to create the event\_log Hash.
 
 ~~~ruby
 def event_history_update(date, location, attendees_hash)
@@ -64,17 +63,17 @@ end
 
 All of these methods are called when a new ClubEvent object is created, so the information is automatically created and stored.
 
-## DinnerClub Class
+# DinnerClub Class
 The DinnerClub Class was created to track and display dinner club events. It displays the history of club, as well as members and the total costs they've paid.
 
-### DinnerClub Instance Variables:
-- running_balance - Hash. Member name as the key and the total costs the member has paid as the value
-- club_history - Hash. Key is the date of an event, value is an array. The array contains the location at index 0, and another hash at index 1. The hash at index 1 holds the attendees of a specific event and how much they paid.
+#### DinnerClub Instance Variables:
+- running\_balance - Hash. Member name as the key and the total costs the member has paid as the value
+- club\_history - Hash. Key is the date of an event, value is an Array. The Array contains the location at index 0, and another Hash at index 1. The Hash at index 1 holds the attendees of a specific event and how much they paid.
 
-### DinnerClub Methods:
-The *new_event* method is used every time the Dinner Club has a new event. It creates a new ClubEvent object and requires the same parameters that a ClubEvent object takes (total_cost, tip_percentage, people, date, location, who_paid). The *new_event* method then runs three other methods: the *club_history_update* method, the *running_balance_update* method, and the *display_running_balance* method.
+#### DinnerClub Methods:
+The "new\_event" method is used every time the Dinner Club has a new event. It creates a new ClubEvent object and requires the same parameters that a ClubEvent object takes (total\_cost, tip\_percentage, people, date, location, who\_paid). The "new\_event" method then runs three other methods: the "club\_history\_update" method, the "running\_balance\_update" method, and the "display\_running\_balance" method.
 
-The *club_history_update* method takes two parameters: club_history and event_log. club_history is the hash created when the DinnerClub object is created, and event_log comes from the *new_event* method, which calls the event_log instance variable from the ClubEvent class.
+The "club\_history\_update" method takes two parameters: club\_history and event\_log. club\_history is the Hash created when the DinnerClub object is created, and event\_log comes from the "new\_event" method, which calls the event\_log instance variable from the ClubEvent class.
 
 ~~~ruby
 def club_history_update(club_history, event_log)
@@ -82,9 +81,9 @@ def club_history_update(club_history, event_log)
 end
 ~~~
 
-The *club_history_update* method destructively merges the club_history hash with the event_log hash.
+The "club\_history\_update" method destructively merges the club\_history Hash with the event\_log Hash.
 
-The *running_balance_update* method takes two parameters: the running_balance hash and the club_history hash. It's used to update the member name and their total cost paid throughout the history of the club.
+The "running\_balance\_update" method takes two parameters: the running\_balance Hash and the club\_history Hash. It's used to update the member name and their total cost paid throughout the history of the club.
 
 ~~~ruby
 def running_balance_update(running_balance, club_history)
@@ -96,9 +95,9 @@ def running_balance_update(running_balance, club_history)
 end
 ~~~
 
-The *running_balance_update* method works by iterating over the club_history hash, and then accessing the array stored as the value in the hash. It then takes that array and looks at index 1, where the attendees_hash was stored in the *new_event* method. From there, it iterates over the hash at index 1 and adds the name of each member as the key to running_balance and adds the cost each member paid to the current value of running_balance. The default value of running_balance is set to 0, so if there is a new member, it adds on to 0.
+The "running\_balance\_update" method works by iterating over the club\_history Hash, and then accessing the Array stored as the value in the Hash. It then takes that Array and looks at index 1, where the attendees\_hash was stored in the "new\_event" method. From there, it iterates over the Hash at index 1 and adds the name of each member as the key to running\_balance and adds the cost each member paid to the current value of running\_balance. The default value of running\_balance is set to 0, so if there is a new member, it adds on to 0.
 
-The *display_running_balance* method only takes the running_balance as a parameter and displays the member names and total costs paid.
+The "display\_running\_balance" method only takes the running\_balance as a parameter and displays the member names and total costs paid.
 
 ~~~ruby
 def display_running_balance(running_balance)
@@ -113,9 +112,9 @@ def display_running_balance(running_balance)
 end
 ~~~
 
-The method puts a blank line, then puts the header information to display like a table. It left and right justifies the headers. The method then prints a dash 35 times to create the look of a dashed line. Then another line break is entered to follow the dashed line. Finally, the method iterates over running_balance to display member name left justified, then balance, formatted to display as currency, right justified.
+The method puts a blank line, then puts the header information to display like a table. It left and right justifies the headers. The method then prints a dash 35 times to create the look of a dashed line. Then another line break is entered to follow the dashed line. Finally, the method iterates over running\_balance to display member name left justified, then balance, formatted to display as currency, right justified.
 
-The final method in DinnerClub is *display_history*, and uses the club_history as the parameter. It works exactly the same as *display_running_balance*, but instead iterates over the club_history hash.
+The final method in DinnerClub is "display\_history", and uses the club\_history as the parameter. It works exactly the same as "display\_running\_balance", but instead iterates over the club\_history Hash.
 
 ~~~ruby
 club_history.each do |date, array|
@@ -123,4 +122,4 @@ club_history.each do |date, array|
 end
 ~~~
 
-This displays three columns of information: date, location, and attendees_hash, which displays members and the costs they paid at the event.  This method is only displayed if called, and is not automatically ran anywhere in the DinnerClub Class.
+This displays three columns of information: date, location, and attendees\_hash, which displays members and the costs they paid at the event.  This method is only displayed if called, and is not automatically ran anywhere in the DinnerClub Class.
