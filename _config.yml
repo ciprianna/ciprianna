@@ -1,0 +1,12 @@
+# Site settings
+title: Ciprianna Learns to Code
+email: ciprianna17@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Learning teh codez!
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+twitter_username: ciprianna17
+github_username:  ciprianna
+
+# Build settings
+markdown: redcarpet
