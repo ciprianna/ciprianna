@@ -1,8 +1,8 @@
 # Site settings
-title: Ciprianna Learns to Code
+title: Coder-Cip!
 email: ciprianna17@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Learning teh codez!
+  Learning teh codez! Adventures, trials, successes, and frustrations of a new programmer.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: ciprianna17
