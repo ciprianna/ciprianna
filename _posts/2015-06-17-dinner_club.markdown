@@ -2,7 +2,7 @@
 layout: post
 title: "Dinner Club"
 date: 2015-06-17
-categories: technical code ruby
+categories: technical code ruby omaha-code-school
 ---
 
 # Assignment Task
