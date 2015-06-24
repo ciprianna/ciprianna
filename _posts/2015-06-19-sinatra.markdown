@@ -1,0 +1,22 @@
+---
+layout: post
+title: "OCS - End of Week 3: Sinatra"
+date: 2015-06-19
+categories: non-technical omaha-code-school
+---
+
+Wow, if I thought last Friday's homework seemed large, I obviously was mistaken! Today we have been introduced to Sinatra, a way to get Ruby to interact with the web. We are to take our inventory management system and completely discard our command-line interface in lieu of a web user-interface. Sounds exciting and daunting all at the same time!
+
+So, we're not completely diving into this without any introduction. To review the week, we've completed our inventory management system that we were assigned last week, been introduced to html, created a [rock paper scissors game][rps] in html, and today have covered fundamentals in Sinatra. Have I mentioned how much I'm learning each week? It's awesome.
+
+This week has been incredible for learning and implementing new things, and html has actually been kind of a fun change from Ruby. Although, I will note, that all those tags seem really tedious compared to Ruby's simplicity.  The rock, paper, scissors project was something interesting to work on and switch from all the database work we've been doing.
+
+I will say, I've definitely had some down moments. I tried and struggled to create modules that are generic and create Objects from a database in my inventory system. That was tough. I did that thing we're not supposed to do and struggled to do it all on my own because I kept thinking I was close to finding a solution. I was...kind of, but I'm not sure I ever would have gotten there on my own. Sumeet to the rescue! He gave incredible clarity to how to create Objects from the generic modules that work with any Class during lecture the next day. I *was* close...kind of, but I didn't have the knowledge or experience that I would have needed to pull it all together on my own. So, I had a long, frustrating day, followed by enlightenment and success.
+
+Onto this Sinatra project now, we're back to databases. Back to the inventory management system. This time to put the entire interface on the web. Yikes. That sounds hard, and like there's a lot to do. But, as usual, I'm sure I'll get through it.
+
+
+
+P.S. I know my RPS is ugly - don't judge! It has cats to make up for it. =^..^=
+
+[rps]: http://auctioner-lace-24865.bitballoon.com/

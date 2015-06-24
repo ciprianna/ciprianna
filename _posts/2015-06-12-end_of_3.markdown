@@ -1,0 +1,21 @@
+---
+layout: post
+title: "OCS - End of Week 2"
+date: 2015-06-12
+categories: non-technical omaha-code-school
+---
+Another great week down in the books! Every day we are learning a ton and implementing concepts in projects of our own. After struggling with learning Python independently for months, I already feel lightyears ahead of that in just a few weeks with the Code School in Ruby.
+
+Some of the concepts we've covered this week include: using git more, testing, Ruby Gems, APIs, and SQL.  All pretty exciting stuff that would have easily been beyond my capability without this kind of focused and dedicated effort that I'm able to give through the school.
+
+I finished up working on rock, paper, scissors on Monday and Tuesday of this week. It's working up to an acceptable level of complexity (I was able to add both a computer player and lizard-spock options!). We also tried creating some mini-projects, formatting phone numbers properly, joining words with a comma and an "and", and truncating paragraphs. We created these manually, and then learned about lovely Active Support and how much time a good gem can save.
+
+Another fun project was learning tests. Using Mini-Test, I was able to create tests for my projects, which saves a ton of time! This was helpful to eliminate manually going through all possible options through the command-line UX (rock beats scissors, rock beats scissors when a computer player is playing, rock beats scissors when scissors is not capitalized). The number of options seems to grow quickly, and using tests was great for making sure that at least calculations and basic methods are doing what they were intended to do.
+
+I was able to get into the Marvel Comics API this week as an assignment, and create a command-line interface for searching characters and returning character descriptions. I also was able to scrape Tweets.
+
+Finally, we moved on to SQL (woo, data stuff!). Now *this*, I've had some experience in, since what I've done before has been in data analysis. I learned SQL fairly recently, but have used it extensively since I've learned it, so this part is exciting to me. But, the problem isn't so much the SQL syntax (as that's fairly simple), it's getting Ruby and SQL to work together. Why does that always seem like the hard part?
+
+Our project to practice SQL is to create an inventory management system, using a database to store information. This has been a *lot* of information to cover. Even familiarity with SQL doesn't seem terribly useful so far.  I haven't heard of CRUD operators, but that seems like a logical approach to interacting with tables. There are still a lot of unknowns, and I'm sure what will lead to a lot of trial and error until something works.
+
+As it's probably quite evident, this week has been a lot of information using new systems, and using Ruby in ways I wouldn't have thought of. It's been fantastic making stretches with my mind to try to figure things out. Our class is getting more comfortable with each other, asking more questions, and admitting that we need help, even if it's frequently. I feel like we're all moving in a positive direction and we're getting comfortable reading each other's code and working together. This is good practice because through most projects so far and all the prep work leading in to the start of school, I've been working completely independently. I'm excited to keep up this pace and work through this inventory management system!

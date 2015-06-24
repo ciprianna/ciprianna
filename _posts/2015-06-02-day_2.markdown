@@ -1,0 +1,23 @@
+---
+layout: post
+title: "OCS - Day 2"
+date: 2015-06-02
+categories: non-technical omaha-code-school
+---
+Yesterday was the first day of Omaha Code School!  It's finally here! I can finally spend my time really focusing on learning to code!  The space is beautiful and welcoming, and everyone in the class seems nice. I'm giddy to be here!
+
+It's almost hard to explain how many different feelings I've had between yesterday and today. Yesterday was rainbows and confidence, and today felt like a giant rain cloud of disappointment.
+
+I'll begin at the top: yesterday we started school and covered some general items. Sumeet, our teacher, gave us a simple assignment to create an Array of numbers and double the biggest number in the Array.  We worked briefly on it, and I was able to come up with a solution. No idea if it's the "right" way to do things or the "wrong" way, or if that's even a thing. But, from what I was reading, it seems like there are preferences when coding, so I try to stick to them when I learn them. Regardless, I came up with something that *worked*.
+
+After that, Sumeet gave us a new project. It seemed rather difficult from it's initial description: create a Class that can split a check, with a tip, among people who have eaten together. I haven't made very many classes, so I was pretty proud that after a while of working on it, I was actually able to complete the task. I showed my code to the class and explained my variables and methods to everyone. That was slightly nerve-racking, but I got some really good feedback on how I was constructing things and what is more aligned with a "proper" way of doing things. Conventions. The feedback, from both the class and Sumeet, was helpful because they all have a different way of thinking about the project. We all continued to work on expanding our projects a bit that night. I was left yesterday feeling that I could handle this class!
+
+And then, there was today...It's not all been bad, but it's definitely been far more frustrating than yesterday. Our task today was to build a DinnerClub Class and to make it use our CheckSplitter. Is that an easy project? I don't know. It must be, because it's Day 2, but it seems impossible. I cannot for the life of me get my head around how to make the classes interact. How do I get methods from CheckSplitter into my new class? How do I get the result of CheckSplitter to store for access into my new class? I do not understand.
+
+Sumeet suggested to the class that we start with diagramming out how everything should look. So, I tried that:
+
+![DinnerClub Diagram](/DinnerClub_sketch.jpg)
+
+Um, yikes. I have no idea what it's supposed to be or how it should look. What should these classes *do*? How do they *talk*? I still can't get past that part. Shouldn't it take in something and then just spit something out? The sketch looks far less muddled than my brain feels. I have googled and read online about as many things as I can think of. Modules? I read about those, but that seems really advanced for my level. I'm just not getting it at this point. I'm sure I will eventually, but for now, I've spent most of the day toiling away and trying to figure this out conceptually. It's late at night (too late) and I'm feeling inadequate.
+
+Luckily, at the very end of the day, we received a note of encouragement. Sumeet told us that this is *supposed* to be hard, and that we're not *supposed* to have all the answers yet.  Several other people in the class also said they were struggling, and that makes me feel better that I'm not alone. Me, ever being the perfectionist that I am, wanted to try to do everything today, and that's impossible. So, from now on, no more toiling til after 11pm on the same project! I'm sure I haven't even been making progress as it's gotten this late. While today was long, I'm hopeful that things will be much more clear as I keep going. I guess we'll see tomorrow.

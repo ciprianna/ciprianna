@@ -1,0 +1,11 @@
+---
+layout: post
+title: "OCS - Day 3: Relief!"
+date: 2015-06-03
+categories: non-technical omaha-code-school
+---
+Okay, yesterday was kind of a downer! But today feels infinitely better. I'm glad I was not the only one struggling and thinking to myself "why am I here?" or "why did I ever think I could do this?!".
+
+So, after hard-pressing yesterday and trying to figure it all out on my own, it all made much more sense this morning! Sumeet gave some instruction this morning on how to make the classes interact, to include how to get them into your current class and how you should be calling methods/information from your other classes. I was greatly enlightened!
+
+After that, I was able to apply the concepts to my own current project. I actually made the classes interact!  Yay! That's a great feeling to have my project work finally after struggling with it so much yesterday!  Back to rainbows and confidence!

@@ -1,0 +1,143 @@
+---
+layout: post
+title: "Rock, Paper, Scissors"
+date: 2015-06-09
+categories: technical ruby code omaha-code-school
+---
+## Purpose of the Assignment
+Rock, Paper, Scissors was created to allow two players, or a single player vs. the computer, to play a game of rock, paper, scissors. Game options include being able to choose how many rounds will be played, and being able to choose Rock, Paper, Scissors, Lizard, Spock.
+
+## Classes
+To accomplish the assignment, three classes are used: Player, ComputerPlayer, and Game.
+
+## Player Class
+The Player class was created to create new players in a given game.
+
+### Player Class Arguments
+
+- name - String given when the Player is initialized
+- weapon - String given when the Player is initialized
+- score - Integer set at 0
+
+### Player Class Methods
+The *score\_update* method adds one to the score attribute of a given player.
+
+~~~ruby
+def score_update
+  @score += 1
+end
+~~~
+
+## ComputerPlayer Class
+This class was created to create a computer player that will randomly sample a weapon to play with.
+
+### ComputerPlayer Arguments
+This method requires one argument: spock. This argument is a string that determines if Rock, Paper, Scissors, Lizard, Spock is being played or not. This argument is created in the Game class.
+
+Other arguments ComputerPlayer creates include:
+
+- name - String set to equal "Computer"; set when initialized
+- score - Integer set to equal 0 when initialized
+- weapon - Array containing weapon choices for the computer to sample
+
+### ComputerPlayer Methods
+The *score\_update* method works exactly the same as in the Player class by adding 1 to the score of the computer player.
+
+The *sample\_weapon\_choice* method takes the Array weapon and samples it. It then stores the sample in the weapon attribute variable.
+
+~~~ruby
+def sample_weapon_choice
+  @weapon = ["rock", "paper", "scissors"].sample
+end
+~~~
+
+The *lizard\_spock\_weapon\_sample* method works the same as the *sample\_weapon\_choice* method, but it adds in the two additional choices, "lizard" and "spock", to the Array to sample.
+
+The final method of the ComputerPlayer class is the *assign\_weapon* method.
+
+~~~ruby
+def assign_weapon(spock)
+  if spock == "spock"
+    lizard_spock_weapon_sample
+  else
+    sample_weapon_choice
+  end
+end
+~~~
+This method takes one argument, spock, which is a String created in the Game class. If spock is equal to "spock", then the *lizard\_spock\_weapon\_sample* method is run. If it's not, then the *sample\_weapon\_choice* method is run.
+
+## Game Class
+The Game class is what runs the game itself. It was created to hold the rules for the game and lets players use the best-of-n games logic.
+
+### Game Class Arguments
+When the Game class is initialized, it creates an options Hash, with a default value of 1 round played. The options Hash is merged with the user inputs when a new Game class object is created. Arguments that can be input include:
+
+- name\_one - String input when initialized
+- name\_two - String input when initialized
+- weapon\_one - String input when initialized
+- weapon\_two - String input when initialized
+- rounds - Integer created when initialized
+- spock - String input when initialized
+
+When a new object is created, two Arrays are also created: the traditional\_choices Array and the spock\_choices Array. Each of these Arrays contains the possible weapon choices a player can choose.
+
+In addition, a choices Hash is created and stored as an instance variable.
+
+~~~ruby
+@choices = {"rock" => ["scissors", "lizard"], "paper" => ["rock", "spock"], "scissors" => ["paper", "lizard"], "lizard" => ["spock", "paper"], "spock" => ["rock", "scissors"]}
+~~~
+Each key of the Hash is a potential weapon choice. The value of the key is an Array containing the losing weapon counterparts to the key.
+
+### Game Class Methods
+The *create\_player\_one* method is ran when a Game class object is initialized. It takes two arguments: name\_one and weapon\_one. This method creates a new Player class object.
+
+~~~ruby
+def create_player_one(name, weapon)
+  @player_one = Player.new(name, weapon)
+end
+~~~
+
+Just like the previous method, the Game class has a *create\_player\_two* method creates another Player class object and stores it as an instance variable called player\_two.
+
+The *define\_player\_two\_robot\_or\_human* method checks the name\_two argument. If it's equal to "Computer", then player\_two is assigned by creating a new ComputerPlayer class object.  If name\_two is not "Computer", then it runs the create\_player\_two method.
+
+~~~ruby
+def assign_player_two_robot_or_human
+  if name_two == "Computer"
+    @player_two = ComputerPlayer.new(spock)
+  else
+    create_player_two(name_two, weapon_two)
+  end
+end
+~~~
+
+The *check\_who\_wins* method determines who wins any given round of rock, paper, scissors and runs the score\_update method on the winning player.
+
+~~~ruby
+def check_who_wins
+  if (choices[player_one.weapon][0] == player_two.weapon) || choices[player_one.weapon][1] == player_two.weapon
+     player_one.score_update
+  else
+    player_two.score_update
+  end
+end
+~~~
+It uses an if-else statement to check the weapon attribute of player\_one and player\_two. If player\_one's weapon attribute key matches the value for player\_two's weapon attribute, then player\_one wins. If it does not match the value of player\_two's weapon attribute, then player\_two wins the game.
+
+The *best\_of* method determines how many rounds a given player needs to win in order to win the entire game.
+
+~~~ruby
+def determine_best_of(rounds)
+  @best_of = rounds / 2
+end
+~~~
+
+The *redefine\_computer\_weapon* method allows the ComputerPlayer object to get a new weapon choice from the ComputerPlayer class's weapon\_sample\_choices method.
+
+~~~ruby
+def redefine_computer_weapon
+  if player_two.name == "Computer"
+    player_two.weapon = player_two.sample_weapon_choice
+  end
+end
+~~~

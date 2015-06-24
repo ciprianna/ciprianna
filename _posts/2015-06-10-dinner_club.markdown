@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Dinner Club"
-date: 2015-06-17
+date: 2015-06-10
 categories: technical code ruby omaha-code-school
 ---
 
