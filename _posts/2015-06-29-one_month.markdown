@@ -1,0 +1,22 @@
+---
+layout: post
+title: "One Month Into Code School!"
+date: 2015-06-29
+categories: non-technical omaha-code-school
+---
+Friday marked the end of the first month of Omaha Code School! It's gone by amazingly fast and has indeed been intense, as promised. To recap what we've delved into so far:
+
+- Ruby - OOP
+- Git
+- Gems
+- APIs
+- SQL
+- MiniTest
+- HTML
+- Sinatra
+
+Who would have thought we could cover all of this material and have it be comprehensive, yet understandable, in this short amount of time?  It's awesome. I'm gaining confidence in doing simple tasks now that I never thought I'd be capable of.  The feeling of getting something working successfully is incredible.
+
+One thing I've had to be cognizant of is the health issues of programming! I heard so many people say, oh, you'll be stuck hunched over a keyboard all day living on Mountain Dew trying to get a project done! I've had office jobs before, so I know to walk around and stretch every so often. I can see where it's definitely easy to get sucked into a project and forget about everything else going on in the world.  One thing I've really appreciated from the code school is doing Yoga twice a week! It's such a refreshing break to move around a bit and take my mind of coding for a while. Not to mention the awesomeness of stretching my back out after staring down at a laptop for most of the day.
+
+All in all, it's been a great first month as I've been transitioning into being a coder! I'm excited to see how the next two months go.
