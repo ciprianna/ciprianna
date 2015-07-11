@@ -5,7 +5,7 @@ permalink: /about/
 ---
 
 <div style="float: left">
-    <img src="/smaller_pic.jpg" alt="Hello, everyone!" style="PADDING-RIGHT: 10px"/>
+    <img src="/smaller_pic.jpg" alt="Hello, everyone!" style="MARGIN-RIGHT: 10px; border: solid black"/>
 </div>
 
 
