@@ -1,0 +1,19 @@
+---
+layout: post
+title: "AJAX, Authentication, and Deploys"
+date: 2015-07-17
+categories: non-technical omaha-code-school
+---
+We're at the end of Week 7, and it's been a busy, difficult week! I feel like I say that every week, but it felt particularly so this one.
+
+JavaScript is kind of a pain, but I've come to terms with it. I have learned how it works a bit better than where I was at last week, and that's all I can hope for. _Every week is improvement_. One particularly rough aspect was using AJAX in a full project. This is layers upon layers of code! It's like every new thing we learn is an additional layer of complexity that we have to figure out and integrate. Ruby, SQL, HTML, CSS, JavaScript...on and on and on. It's cool to step back and see how it all fits together, but it's really difficult to keep track of as I'm working through a project. I'm sure that's one of those things that gets better over time.
+
+That said, AJAX is such a cool tool to use! I had no idea how much could be done responsively using AJAX. It seems very powerful. The downside is that it's difficult to understand _exactly_ how the process works. For example, what exactly is 'this' at any given point in time, and how to I test for 'this' effectively in debugging? These were questions I was continually asking myself this week (along with, what the hell, JavaScript?!). I feel as though I've progressed a lot this week though. After tinkering, and adjusting minor things here and there, Googling error messages after error messages, and running out of ideas, I had that moment where it clicked! It just suddenly made sense...for some reason. After that point, things went much more smoothly.
+
+Another thing we worked on was creating our own [API][api_link]. So for that, we made views for normal website interaction, but then we also created views for pure JSON returns. Through that, we learned about creating and parsing JSON, and why it might be useful. I thought it was all rather interesting, because I had seen JSON before working with data, but I didn't really understand it. Ah, enlightenment.
+
+So, this week was difficult, but it felt like I progressed a ton. What we've covered was AJAX (a _lot_), using JSON and creating an API, creating user logins with Authentication and encryption, using Active Record as an ORM, and bundling/deploying projects. What a full week! It's been awesome, and we're getting to the point where we're doing some really cool things. I mean, storing encrypted passwords and keeping track of sessions is pretty sweet, and something I didn't think I'd ever know about. Plus, AJAX is so _fancy_. It's like that extra bit of user interaction that makes it really slick. And, woohoo!, I can share all the programs I've been making!
+
+Anyway, it's been a great week, though difficult at times. I'm feeling like I'm making strides (after I had my moment of clarity), and that's all I can ask for.
+
+[api_link]: https://github.com/ciprianna/07-13-api_project

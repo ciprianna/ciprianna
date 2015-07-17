@@ -1,0 +1,96 @@
+---
+layout: post
+title: "API with AJAX"
+date: 2015-07-13
+categories: technical javascript ajax api omaha-code-school
+---
+## Project Scope
+The purpose of this project was to return JSON results from an API, and display that information to the user in a clear format without refreshing the page. The API used is for class assignments.
+
+## HTML
+The html portion of the project is short, so that the page loads quickly to the user.
+
+~~~ html
+<ul id="list">
+
+</ul>
+
+<script type="text/javascript" src="/all_assignments.js"></script>
+~~~
+
+## JavaScript
+Because the HTML is so simple, JavaScript is doing the heavy lifting to retrieve information and display it back to the user.
+
+To begin, JavaScript and AJAX needed to identify the ul element and create a route request.
+
+~~~ javascript
+var all_assignments = document.getElementById('list');
+var route = new XMLHttpRequest();
+route.open("get", "/api/assignments");
+~~~
+
+The route "/api/assignments" is the API portion of the website, which returns JSON. A function was added as an event listener for when the request loads.  The first thing that's done when the request loads is to parse the JSON response and store it in a variable called "parsed_all".  From here, another function runs inside the load function.
+
+~~~ javascript
+for (i = 0; i < parsed_all.length; i++) {
+  var element = document.createElement("li");
+  all_assignments.appendChild(element);
+  var link_assignment = document.createElement("a"); element.appendChild(link_assignment);
+  link_assignment.appendChild(document.createTextNode(parsed_all[i].name)); link_assignment.setAttribute("href", "/api/assignments/" + parsed_all[i].id);
+  link_assignment.setAttribute("id", parsed_all[i].id)
+  link_assignment.addEventListener("click", display_assignment_info);
+}
+~~~
+This for-loop goes through all of the parsed JSON objects returned from the request and creates a new li element for them. It then appends the element to the ul parent. Next, an anchor element is created and appended to the li element. The anchor element, _link\_assignment_, gets the name attribute added as text between the opening and closing anchor tags. Then the correct api route is set to the href attribute for that element. This route gets the JSON return from the API for one assignment's information. The for-loop then sets an id attribute for each anchor, and assigns a click-event listener to each anchor element, so that it will run the _display\_assignment\_info_ function.
+
+The _display\_assignment\_info_ function runs after a single assignment is clicked.
+
+~~~ javascript
+var assignment_request = new XMLHttpRequest();
+assignment_id = this.id
+var current_element = this;
+assignment_request.open("get", "/api/assignments/" + assignment_id);
+~~~
+
+This function first runs the above code, creating a new request to the api for the route which matches the selected assignment's information. This will bring back all associated assignment information in JSON. The default action of the click event is prevented in this function, and the request is sent.
+
+Upon request load, another event listener function is used to display the JSON returns in a readable format.  First, a sub-list is created by creating a new ul element and appending it to the element that was clicked upon, which would be a link for one assignment's information.
+
+~~~ javascript
+var sub_list = document.createElement("ul");
+parent = current_element.parentElement;
+parent.appendChild(sub_list);
+var info = assignment_request.response;
+var assignment_info = JSON.parse(info);
+~~~
+
+The return results are parsed correctly and stored as _assignment\_info_. After this, each attribute for the assignment is loaded as an li element, using this general format:
+
+~~~ javascript
+var description_element = document.createElement("li");
+sub_list.appendChild(description_element);
+description_element.appendChild(document.createTextNode("Description: " + assignment_info.description))
+~~~
+
+A new li element is created and appended appropriately, then the information is displayed to the user in that element.
+
+One tricky portion of information to display was a given assignment's media links.  To do this, the same general format was used:
+
+~~~ javascript
+var links_element = document.createElement("li");
+sub_list.appendChild(links_element);
+var assign_links = assignment_info.links;
+links_element.appendChild(document.createTextNode("Media: "))
+for (var i = 0; i < assign_links.length; i++) {
+  var media_link = document.createElement('a');
+  links_element.appendChild(media_link);
+  media_link.appendChild(document.createTextNode(assign_links[i].name + " \t"));
+  media_link.setAttribute('href', assign_links[i].where_stored)
+}
+~~~
+
+However, an extra anchor tag needed to be created and the href element needed to be set to the actual url for the media. The front end work is the same as the above example, except that the "links" attribute returns a collection. The collection of media links is iterated over using a for-loop again, and the corresponding information for each media Object is stored into its own anchor tag.
+
+This code works and returns results in a coherent way without needing to refresh the page. The video below demonstrates how it works.
+
+<iframe width="420" height="315" src="https://www.youtube.com/embed/TgFHa99xLSY" frameborder="0" allowfullscreen></iframe>
