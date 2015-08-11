@@ -1,0 +1,17 @@
+---
+layout: post
+title: "OCS - Start of Week 11"
+date: 2015-08-10
+categories: non-technical omaha-code-school
+---
+The last two weeks of class are here!  My feeling of nervousness is setting in, as I start looking for jobs and figuring out how to even approach the job market.
+
+The past week was a deeper dive into our [Mode Shift Omaha][modeshift] project. We really dove in and worked on design and adding in user features. Some of this was just thinking through user flow more deeply and thinking of things like, well it would be nice if the site did X. That's a bit difficult to think through at this point with not a whole lot of experience, but making comparisons to other well-functioning sites really helped with that process. It feels as though the project has really evolved and that we've made substantial progress last week.
+
+In addition to that, Sumeet asked us to consider what we'd like to get out of the remainder of the course. This is an interesting question to consider, because it forced me to really think about my likes and preferences when it comes to all the things I've been learning the past few months. We've learned _a lot_ and it's hard to distinguish what I enjoyed the most.
+
+I ultimately decided that I'm more inclined towards back-end work. I feel the strongest there and understand the concepts well. With that decision, I've spent today embarking on learning AngularJS. This will really enhance my ability to work with AJAX/JS in making fast server requests/responses for the user. This has meant traversing into yet another subject and diving right into the weeds! It seems a bit over my head so far, but I think every thing I've learned so far always seems over my head until I really start playing with it. AngularJS seems like when I do learn it, it'll be a really great asset to integrate into projects.
+
+With all this talk on what I should be focusing on though, it's bringing a small (okay, maybe sizeable) amount of anxiety for what's next! I'm nervous and excited about what my next opportunities could entail. I keep thinking, how will I know what I'm going to have to do? Will anyone want to hire someone so new to the field? If I do get hired, will my co-workers think I'm not up to speed? How will I stay on top of new technologies? How will I teach myself new languages and tools at my first job? It seems almost overwhelming. _Almost_, but not quite. I think those feelings are ultimately enveloped by a deeper feeling of excitement. I'll get to be part of a team that _builds_ things! I'll get to research and solve puzzles all day long! I'll get to do something that mixes creative problem-solving with logic! I'll hopefully be working with a team that's passionate about what they do and who are also interested in continually learning new things! These are all positives I'm looking forward to whenever I land my first development job. It's all getting real and scary that there are a mere two weeks left, then it's out of the nest! It's almost time to see if I can fly.
+
+[modeshift]: https://aqueous-retreat-2523.herokuapp.com/
