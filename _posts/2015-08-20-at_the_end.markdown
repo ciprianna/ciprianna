@@ -1,0 +1,23 @@
+---
+layout: post
+title: "At the End"
+date: 2015-08-20
+categories: non-technical omaha-code-school
+---
+Tomorrow is the big day: we will finally be Omaha Code School graduates! It feels so weird to think of being off on my own, and it's gotten me thinking about how important my first job will be.
+
+I've been in a great environment, with fellow students who are going through similar experiences, and insights from a fantastic teacher. This environment has been fostering an incredible amount of growth and I've been deeply immersed in it for three months now. Wherever I end up working, I know it won't be exactly the same, but I want to ensure that I'm able to have a place where I know I'll continue to grow. I hope that I'll find a place that I can freely ask questions and explore code, where I can read and soak things in, where I can talk with someone about their code and all its intricacies, and where I can really continue this incredible trajectory I've been on.  Okay, so maybe that's idealistic, but still, I can hope!
+
+Our last week has been continued studies on our chosen tracks. Some students who tended to gravitate towards the front-end have been working on deepening their knowledge of CSS and creating animations. For the rest of us, we've been diving deep into AnuglarJS and trying to work out its quirks. I can't say it's making complete sense to me yet, but I'm improving.
+
+On Tuesday we got our OCS hoodies! This is almost a right of passage that our class has been looking forward to so that we could be "official". We also had a day where we talked about the tech industry and it's current issues. Not everything about the tech industry is shiny and bubbly (or any industry, really), so we discussed some of its current issues and how we can make ourselves more aware of our interactions and environment. Issues such as bias (concious or not), a lack of diversity, or just divisive language, are all present and can create a toxic atmosphere. I think it was fantastic to bring that sort of awareness to the forefront and ignite a sense of honesty about what to expect, in hopes that we can be part of a potential solution. Awareness and a sense of understanding is key to creating change over time.
+
+Today, we had a panel of industry professionals talk to us about their experiences. We had Caitlin Bales, the CTO of [Bulu Box][bulu], Kevin Berry, the Technical Crew Chief of [RaceNote][racenote] (hehe), and Dylan Baumann, a developer at [Grain & Mortar][grain]. They all had some excellent insight on development in general, their first jobs, working with junior developers, getting involved in the community, and tons of other useful tidbits. I think the biggest take away I got from it all was to not feel so intimidated. They _all_ expressed the feelings of being lost, confused, or afraid to ask questions at one point or another. Hearing their experiences was reassuring that I won't (and could never possibly) know everything out there, but that it's **okay**. Plus, they said that for the most part, job announcements asking for a unicorn programmer (which seems like all of them) are crazy - so that's good!
+
+Tomorrow we'll go to a few tech industries to see their spaces and talk to their teams. I'm excited to see what the atmospheres are like and if they have similar reflections as those we heard today. Then we have our graduation tomorrow night! How exciting! What'll come next?!
+
+I talked with a great company down in Kansas City, and the discussion (sort-of interview?) went really well. We had great rapport and the company sounded like a great place to grow. _However_, they're in Kansas City, and I _just_ moved back to Omaha - and happen to love it here. Their site said that they sometimes do remote work, but they weren't able to make it work for a junior dev or chunk some travel time up. That's alright, because it was a great experience to talk with them anyway. I've also got another interview on Monday (woo!), so hopefully that'll go well. I think it's a great sign that people are at least willing to have a conversation and hear what I've been doing. If they're willing to give me a chance to show them, then that's all I can ask for!
+
+[bulu]: https://www.bulubox.com/
+[racenote]: http://racenote.com/
+[grain]: http://grainandmortar.com/
